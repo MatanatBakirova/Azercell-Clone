@@ -1,0 +1,48 @@
+
+/* Varsayılan olaraq element görünür */
+
+/* 768 piksel və daha kiçik ekranlar üçün (tablet ve mobil) */
+@media (max-width: 700px) {
+  .only-large-devices{
+    display: block;
+  }
+  .only-large-devices {
+    display: none;
+  }
+}
+@media(max-width:576px){
+.only-large-devices{
+  padding-left: 0;
+  padding-right: 0;
+}
+}
+.nav-link{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.container-fluid .nav-link:hover{
+    background-color: #262626 ;
+}
+.nav-link{
+    height: 45px;
+
+}
+.container-fluid .nav-link {
+    transition: background-color 0.5s ease;
+}
+.border-right{
+    border-right: 2px solid rgba(0, 0, 0, 0.1); /* Hafif sağ border */
+    /* transition: border-color 0.5s ease; */
+}
+
+  .dropdown-toggle::after {
+    filter: invert(1); /* Ok rengini burada değiştirin */
+  }
+  .dropdown-toggle:hover{
+    background-color: #262626 ;
+    ;
+  }
+  .dropdown-toggle{
+    transition: background-color 0.5s ease;
+  }
