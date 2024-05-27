@@ -6,8 +6,6 @@ import flag from '../assets/images/azerbaijanFla.svg';
 import flag2 from '../assets/images/630657.png'
 
 const Navbar = () => {
-
-
   return (
 <div className='only-large-devices'>
 <nav className=" only-large-devices  navbar navbar-expand-sm   bg-black " style={{height:'45px'}}>
@@ -48,8 +46,7 @@ const Navbar = () => {
     <li><a class="dropdown-item " href="#">Action</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
   </ul>
-</div>
-            
+</div>       
       <li className="nav-item">
           <a className="nav-link text-white me-4"href="#"> <FaSearch style={{fontSize:'20px'}}/></a>
         </li>      

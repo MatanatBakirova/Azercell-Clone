@@ -2,19 +2,21 @@ import React from 'react'
 import './StyleCss/Section.css'
 import { FaBars } from "react-icons/fa";
 import { FaUser } from 'react-icons/fa6';
+import cardphoto from '../assets/images/650x540-4.png.webp'
 
 const Section = () => {
   return (
     <>
        <section className='container-fluid p-0' >
         <div className='desktopsection'>
+
           <nav class=" navbar navbar-expand-lg ">
-  <div class="navbars container ">
+  <div class="navbars container-fluid ">
     <div className='userAndBarsButton mt-3 container-fluid'>
     <a class="navbar-brand mt-0 " href="#"><img style={{width:'140px',marginRight:'-30px'}}  src="https://www.azercell.com/theme/images/common/b-2-c-logo.svg" alt="" /></a>
     <div className=' d-lg-none buttons d-flex align-items-center gap-4'>
     <button class="userbutton navbar-toggler border-0 p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <FaUser className='' style={{color:'#fff',fontSize:'20px',opacity:'.9'}}/>
+  <FaUser className='d-block fauser' style={{color:'#fff',fontSize:'20px',opacity:'.9'}}/>
     </button>
     <div className='freediv border opacity-75' style={{height:'25px'}}></div>
     <button class="barsbutton navbar-toggler border-0 p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +26,7 @@ const Section = () => {
     </div>
   
     <div class="secondnavlink collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="d-flex align-items-center navbar-nav gap-3 mt-4 mb-2 mb-lg-0" >
+      <ul class="d-flex align-items-center navbar-nav gap-2 mt-4 mb-2 mb-lg-0" >
       <li class="nav-item dropdown">
           <a class=" nav-link-2  dropdown-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             akart
@@ -66,14 +68,42 @@ const Section = () => {
           <a class="nav-link-2" href="#">Dəstək</a>
         </li>
       </ul>
-    
     </div>
   </div>
 </nav>
 
 
-        </div>
+<div className='Premium  '>
+  {/* <div className='row'> */}
+    <div className='col-lg-12  '>
+    <div className='wordSide'>
+      <h1 className='d-flex fw-bold title-text'style={{color:'#fff'}}>Premium <br /> üstünlüyü seç!</h1> 
+    </div>
+ 
+
+    <div/>
+    </div>
+    <div className='col-12'>
+      <div className= "cards  ms-auto" >
+        <img className='cardphoto' src={cardphoto} alt=""/>
+
+      </div>
+
+    </div>
+
+
+</div>
+
+  </div>
+  
+{/* </div> */}
+    
+    
+ 
+    
+    
     </section>
+   
     </>
  
   )
