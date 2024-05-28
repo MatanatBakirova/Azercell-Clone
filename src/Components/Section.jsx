@@ -2,15 +2,15 @@ import React from 'react'
 import './StyleCss/Section.css'
 import { FaBars } from "react-icons/fa";
 import { FaUser } from 'react-icons/fa6';
-import cardphoto from '../assets/images/650x540-4.png.webp'
+import Premium from './Section-Cards/Premium';
+import Carousell from './Section-Cards/Carousell';
 
 const Section = () => {
   return (
     <>
        <section className='container-fluid p-0' >
-        <div className='desktopsection'>
-
-          <nav class=" navbar navbar-expand-lg ">
+        {/* <div className='desktopsection'> */}
+          <nav class="navbar navbar-expand-lg fixed-top" >
   <div class="navbars container-fluid ">
     <div className='userAndBarsButton mt-3 container-fluid'>
     <a class="navbar-brand mt-0 " href="#"><img style={{width:'140px',marginRight:'-30px'}}  src="https://www.azercell.com/theme/images/common/b-2-c-logo.svg" alt="" /></a>
@@ -71,37 +71,9 @@ const Section = () => {
     </div>
   </div>
 </nav>
-
-
-<div className='Premium  '>
-  {/* <div className='row'> */}
-    <div className='col-lg-12  '>
-    <div className='wordSide'>
-      <h1 className='d-flex fw-bold title-text'style={{color:'#fff'}}>Premium <br /> üstünlüyü seç!</h1> 
-    </div>
- 
-
-    <div/>
-    </div>
-    <div className='col-12'>
-      <div className= "cards  ms-auto" >
-        <img className='cardphoto' src={cardphoto} alt=""/>
-
-      </div>
-
-    </div>
-
-
+<Carousell/>
+<div>
 </div>
-
-  </div>
-  
-{/* </div> */}
-    
-    
- 
-    
-    
     </section>
    
     </>
