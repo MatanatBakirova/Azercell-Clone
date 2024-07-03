@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './StyleCss/Navbar.css';
 import { FaSearch,FaUserAlt } from "react-icons/fa";
 import { GiNetworkBars } from "react-icons/gi";
-import flag from '../assets/images/azerbaijanFla.svg';
 import flag2 from '../assets/images/630657.png'
 
 const Navbar = () => {
@@ -38,13 +37,13 @@ const Navbar = () => {
       {/* <li className="nav-item">
           <a className="nav-link text-white"href="#"><img style={{width:'35px'}}src={flag2} alt="" /></a>
           <li/> */}
-          <div class="dropdown">
-  <button  class="btn  rounded-0 dropdown-toggle " variant="secondary"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className="dropdown">
+  <button  className="btn  rounded-0 dropdown-toggle " variant="secondary"type="button" data-bs-toggle="dropdown" aria-expanded="false">
   <img style={{width:'30px'}}src={flag2} alt="" />
   </button>
-  <ul class="dropdown-menu "variant="secondary">
-    <li><a class="dropdown-item " href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
+  <ul className="dropdown-menu "variant="secondary">
+    <li><a className="dropdown-item " href="#">Action</a></li>
+    <li><a className="dropdown-item" href="#">Another action</a></li>
   </ul>
 </div>       
       <li className="nav-item">

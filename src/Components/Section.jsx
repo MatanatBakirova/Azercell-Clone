@@ -2,18 +2,16 @@ import React from 'react'
 import './StyleCss/Section.css'
 import { FaBars } from "react-icons/fa";
 import { FaUser } from 'react-icons/fa6';
-import Premium from './Section-Cards/Premium';
-import Carousell from './Section-Cards/Carousell';
 
 const Section = () => {
   return (
     <>
-       <section className='container-fluid p-0' >
+       <section className='container-fluid' >
         {/* <div className='desktopsection'> */}
-          <nav class="navbar navbar-expand-lg fixed-top" >
+          <nav class="section-navbar navbar navbar-expand-lg  " >
   <div class="navbars container-fluid ">
     <div className='userAndBarsButton mt-3 container-fluid'>
-    <a class="navbar-brand mt-0 " href="#"><img style={{width:'140px',marginRight:'-30px'}}  src="https://www.azercell.com/theme/images/common/b-2-c-logo.svg" alt="" /></a>
+    <a class="navbar-brand " href="#"><img style={{width:'140px',marginRight:'-30px'}}  src="https://www.azercell.com/theme/images/common/b-2-c-logo.svg" alt="" /></a>
     <div className=' d-lg-none buttons d-flex align-items-center gap-4'>
     <button class="userbutton navbar-toggler border-0 p-0 m-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <FaUser className='d-block fauser' style={{color:'#fff',fontSize:'20px',opacity:'.9'}}/>
@@ -25,7 +23,7 @@ const Section = () => {
     </div>
     </div>
   
-    <div class="secondnavlink collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="secondnavlink collapse navbar-collapse p-3" id="navbarSupportedContent" >
       <ul class="d-flex align-items-center navbar-nav gap-2 mt-4 mb-2 mb-lg-0" >
       <li class="nav-item dropdown">
           <a class=" nav-link-2  dropdown-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,9 +69,7 @@ const Section = () => {
     </div>
   </div>
 </nav>
-<Carousell/>
-<div>
-</div>
+{/* <div> */}
     </section>
    
     </>

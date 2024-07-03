@@ -3,14 +3,17 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Section from './Components/Section';
-import Carousell from './Components/Section-Cards/Carousell';
+import CarouselSection from './Components/Section-Cards/CarouselSection';
 
 function App() {
   return (
     <>
     <Navbar/>
 <Section/>
-{/* <Carousell/> */}
+<div className='caruselSection'>
+<CarouselSection/>
+
+</div>
     </>
 
   );
