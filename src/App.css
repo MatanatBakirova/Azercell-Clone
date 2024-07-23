@@ -1,6 +1,10 @@
 .caruselSection {
     position: relative;
 }
+.slide-content1,.slide-content2,.slide-content3{
+    cursor: pointer;
+}
+
 @media (min-width: 320px) {
     .slide-first{
         display: flex;

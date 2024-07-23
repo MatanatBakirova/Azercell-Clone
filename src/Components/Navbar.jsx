@@ -3,6 +3,7 @@ import './StyleCss/Navbar.css';
 import { FaSearch,FaUserAlt } from "react-icons/fa";
 import { GiNetworkBars } from "react-icons/gi";
 import flag2 from '../assets/images/630657.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -12,7 +13,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-5 gap-3">
         <li className="nav-item">
-          <a className="nav-link text-white opacity-75"href="#">Fərdi</a>
+          <Link className="nav-link text-white opacity-75"to="/">Fərdi</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link text-white opacity-75" href="#">Biznes üçün</a>
